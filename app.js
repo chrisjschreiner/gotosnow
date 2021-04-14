@@ -21,7 +21,8 @@ const userRoutes = require('./routes/users');
 const resortRoutes = require('./routes/resorts');
 const reviewRoutes = require('./routes/reviews');
 
-const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/go-to-snow';
+const dbUrl = process.env.DB_URL; 
+// || 'mongodb://localhost:27017/go-to-snow';
 
 mongoose.connect(dbUrl, {
     useNewUrlParser: true,
