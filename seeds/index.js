@@ -3,7 +3,16 @@ const cities = require('./cities');
 const { resorts } = require('./seedHelpers');
 const Resort = require('../models/resort');
 
-mongoose.connect('mongodb://localhost:27017/go-to-snow', {
+if (process.env.NODE_ENV !== "production") {
+    require('dotenv').config();
+}
+
+const dbUrl = process.env.DB_URL; 
+
+// Put below code back in to replace dbUrl to connect local
+// 'mongodb://localhost:27017/go-to-snow'
+
+mongoose.connect(dbUrl, {
     useNewUrlParser: true,
     useCreateIndex: true,
     useUnifiedTopology: true
