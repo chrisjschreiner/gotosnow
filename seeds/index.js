@@ -35,7 +35,7 @@ const seedDB = async () => {
         const price = Math.floor(Math.random() * 20) + 10;
         const resort = new Resort({
             //Your user id
-            author: '605b5d82f19d1f3f78dffe98',
+            author: '607709565b04b700156cd90d',
             location: `${cities[random1000].city}, ${cities[random1000].state}`,
             name: `${sample(resorts)}`,            
             description: 'Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
