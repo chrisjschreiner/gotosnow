@@ -112,6 +112,8 @@ map.on('load', function () {
     // the location of the feature, with
     // description HTML from its properties.
     map.on('mouseenter', 'unclustered-point', function (e) {
+        // Change the cursor style as a UI indicator.
+        map.getCanvas().style.cursor = 'pointer';
         const { popUpMarkup } = e.features[0].properties;
         const coordinates = e.features[0].geometry.coordinates.slice();
 
@@ -122,7 +124,7 @@ map.on('load', function () {
             coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
         }
 
-        popup()
+        popup
             .setLngLat(coordinates)
             .setHTML(popUpMarkup)
             .addTo(map);
