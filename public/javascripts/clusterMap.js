@@ -79,7 +79,7 @@ map.on('load', function () {
             'circle-color': '#11b4da',
             'circle-radius': 4,
             'circle-stroke-width': 1,
-            'circle-stroke-color': '#fff'
+            'circle-stroke-color': '#292b2c'
         }
     });
 
