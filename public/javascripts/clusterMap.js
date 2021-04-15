@@ -84,7 +84,7 @@ map.on('load', function () {
     });
 
     // inspect a cluster on click
-    map.on('click', 'clusters', function (e) {
+    map.on('hover', 'clusters', function (e) {
         const features = map.queryRenderedFeatures(e.point, {
             layers: ['clusters']
         });
