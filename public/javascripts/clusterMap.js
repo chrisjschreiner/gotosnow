@@ -102,6 +102,11 @@ map.on('load', function () {
         );
     });
 
+    var popup = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+        });
+
     // When a click event occurs on a feature in
     // the unclustered-point layer, open a popup at
     // the location of the feature, with
@@ -117,7 +122,7 @@ map.on('load', function () {
             coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
         }
 
-        new mapboxgl.Popup()
+        popup()
             .setLngLat(coordinates)
             .setHTML(popUpMarkup)
             .addTo(map);
@@ -128,10 +133,10 @@ map.on('load', function () {
         popup.remove();
         });
 
-    map.on('mouseenter', 'clusters', function () {
-        map.getCanvas().style.cursor = 'pointer';
-    });
-    map.on('mouseleave', 'clusters', function () {
-        map.getCanvas().style.cursor = '';
-    });
+    // map.on('mouseenter', 'clusters', function () {
+    //     map.getCanvas().style.cursor = 'pointer';
+    // });
+    // map.on('mouseleave', 'clusters', function () {
+    //     map.getCanvas().style.cursor = '';
+    // });
 });
