@@ -132,7 +132,7 @@ map.on('load', function () {
 
     map.on('mouseleave', 'unclustered-point', function () {
         map.getCanvas().style.cursor = '';
-        popup.remove();
+        // popup.remove();
         });
 
     // map.on('mouseenter', 'clusters', function () {
