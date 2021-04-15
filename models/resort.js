@@ -47,9 +47,10 @@ const ResortSchema = new Schema({
 
 
 ResortSchema.virtual('properties.popUpMarkup').get(function () {
-    return `
-    <strong><a href="/resorts/${this._id}">${this.name}</a><strong>
-    <p>${this.description.substring(0, 20)}...</p>`
+    return `<strong><a href="/resorts/${this._id}">${this.name}</a><strong>`
+    // return `
+    // <strong><a href="/resorts/${this._id}">${this.name}</a><strong>
+    // <p>${this.description.substring(0, 20)}...</p>`
 });
 
 
