@@ -84,7 +84,7 @@ map.on('load', function () {
     });
 
     // inspect a cluster on click
-    map.on('hover', 'clusters', function (e) {
+    map.on('click', 'clusters', function (e) {
         const features = map.queryRenderedFeatures(e.point, {
             layers: ['clusters']
         });
@@ -106,7 +106,7 @@ map.on('load', function () {
     // the unclustered-point layer, open a popup at
     // the location of the feature, with
     // description HTML from its properties.
-    map.on('click', 'unclustered-point', function (e) {
+    map.on('mouseenter', 'unclustered-point', function (e) {
         const { popUpMarkup } = e.features[0].properties;
         const coordinates = e.features[0].geometry.coordinates.slice();
 
@@ -122,6 +122,11 @@ map.on('load', function () {
             .setHTML(popUpMarkup)
             .addTo(map);
     });
+
+    map.on('mouseleave', 'unclustered-point', function () {
+        map.getCanvas().style.cursor = '';
+        popup.remove();
+        });
 
     map.on('mouseenter', 'clusters', function () {
         map.getCanvas().style.cursor = 'pointer';
