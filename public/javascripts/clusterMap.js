@@ -69,7 +69,9 @@ map.on('load', function () {
             'text-size': 12,
         },
         paint: {
-            'text-color': '#ffffff'
+            'text-color': '#ffffff',
+            'circle-stroke-width': 1,
+            'circle-stroke-color': '#292b2c'
         }
     });
 
