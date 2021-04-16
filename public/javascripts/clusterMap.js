@@ -40,7 +40,7 @@ map.on('load', function () {
             'circle-color': [
                 'step',
                 ['get', 'point_count'],
-                '#03a9f4',
+                '#0288d1',
                 10,
                 '#2196F3',
                 30,
@@ -49,7 +49,7 @@ map.on('load', function () {
             'circle-radius': [
                 'step',
                 ['get', 'point_count'],
-                15,
+                10,
                 10,
                 20,
                 30,
@@ -76,7 +76,7 @@ map.on('load', function () {
         source: 'resorts',
         filter: ['!', ['has', 'point_count']],
         paint: {
-            'circle-color': '#b3e5fc',
+            'circle-color': '#4fc3f7',
             'circle-radius': 4,
             'circle-stroke-width': 1,
             'circle-stroke-color': '#292b2c'
