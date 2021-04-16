@@ -54,7 +54,9 @@ map.on('load', function () {
                 20,
                 30,
                 15
-            ]
+            ],
+            'circle-stroke-width': 1,
+            'circle-stroke-color': '#292b2c'
         }
     });
 
@@ -70,8 +72,6 @@ map.on('load', function () {
         },
         paint: {
             'text-color': '#ffffff',
-            'circle-stroke-width': 1,
-            'circle-stroke-color': '#292b2c'
         }
     });
 
