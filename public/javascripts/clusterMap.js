@@ -140,10 +140,10 @@ map.on('load', function () {
         popup.remove();
         });
 
-    // map.on('mouseenter', 'clusters', function () {
-    //     map.getCanvas().style.cursor = 'pointer';
-    // });
-    // map.on('mouseleave', 'clusters', function () {
-    //     map.getCanvas().style.cursor = '';
-    // });
+    map.on('mouseenter', 'clusters', function () {
+        map.getCanvas().style.cursor = 'pointer';
+    });
+    map.on('mouseleave', 'clusters', function () {
+        map.getCanvas().style.cursor = '';
+    });
 });
