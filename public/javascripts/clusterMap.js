@@ -66,7 +66,8 @@ map.on('load', function () {
         layout: {
             'text-field': '{point_count_abbreviated}',
             'text-font': ['DIN Offc Pro Medium', 'Arial Unicode MS Bold'],
-            'text-size': 12
+            'text-size': 12,
+            'text-color': '#ffffff'
         }
     });
 
@@ -79,8 +80,7 @@ map.on('load', function () {
             'circle-color': '#4fc3f7',
             'circle-radius': 4,
             'circle-stroke-width': 1,
-            'circle-stroke-color': '#292b2c',
-            'text-color': '#ffffff'
+            'circle-stroke-color': '#292b2c'
         }
     });
 
