@@ -136,6 +136,10 @@ map.on('load', function () {
     });
 
     map.on('mouseleave', 'unclustered-point', function () {
+        popup
+            .setLngLat(coordinates)
+            .setHTML(popUpMarkup)
+            .addTo(map);
         map.getCanvas().style.cursor = '';
         popup.remove();
         });
