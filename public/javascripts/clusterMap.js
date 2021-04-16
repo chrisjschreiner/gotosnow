@@ -40,7 +40,7 @@ map.on('load', function () {
             'circle-color': [
                 'step',
                 ['get', 'point_count'],
-                '#00BCD4',
+                '#03a9f4',
                 10,
                 '#2196F3',
                 30,
@@ -76,9 +76,9 @@ map.on('load', function () {
         source: 'resorts',
         filter: ['!', ['has', 'point_count']],
         paint: {
-            'circle-color': '#11b4da',
-            'circle-radius': 8,
-            'circle-stroke-width': 2,
+            'circle-color': '#b3e5fc',
+            'circle-radius': 4,
+            'circle-stroke-width': 1,
             'circle-stroke-color': '#292b2c'
         }
     });
