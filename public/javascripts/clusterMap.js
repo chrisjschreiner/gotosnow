@@ -40,7 +40,7 @@ map.on('load', function () {
             'circle-color': [
                 'step',
                 ['get', 'point_count'],
-                '#0288d1',
+                '#039be5',
                 10,
                 '#2196F3',
                 30,
@@ -56,7 +56,7 @@ map.on('load', function () {
                 15
             ],
             'circle-stroke-width': 1,
-            'circle-stroke-color': '#292b2c'
+            'circle-stroke-color': '#ffffff'
         }
     });
 
@@ -84,7 +84,7 @@ map.on('load', function () {
             'circle-color': '#4fc3f7',
             'circle-radius': 4,
             'circle-stroke-width': 1,
-            'circle-stroke-color': '#292b2c'
+            'circle-stroke-color': '#ffffff'
         }
     });
 

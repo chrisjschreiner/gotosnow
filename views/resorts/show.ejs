@@ -31,8 +31,8 @@
             </div>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item"><%= resort.location%></li>
-                <li class="list-group-item">Submitted by <%= resort.author.username%></li>
                 <li class="list-group-item">$<%= resort.price%> per lift ticket</li>
+                <li class="list-group-item">Submitted by <%= resort.author.username%></li>
             </ul>
             <%  if( currentUser && resort.author.equals(currentUser._id))  {%>
             <div class="card-body">
