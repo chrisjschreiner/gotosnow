@@ -3,8 +3,8 @@ const map = new mapboxgl.Map({
     container: 'cluster-map',
     style: 'mapbox://styles/mapbox/light-v10',
     // center: [-103.59179687498357, 40.66995747013945],
-    center: [-100.440584, 38.215617],
-    zoom: 2.75
+    center: [-100.440584, 38.344861],
+    zoom: 3.25
 });
 
 map.scrollZoom.disable();
